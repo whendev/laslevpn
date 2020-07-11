@@ -1,26 +1,23 @@
 import outsideClick from './outsideClick.js';
 
-export default function initMobileMenu(){
-    const btn = document.querySelector('.header__img button');
-    const menu = document.querySelector('.menu__nav');
-    const menuList = document.querySelector('.menu__nav ul');
-    const events = ['click'];
+export default function initMobileMenu() {
+  const btn = document.querySelector('.header__img button');
 
-    events.forEach((eventListener) => {
-        btn.addEventListener(eventListener, dropMenu);
-    })
+  const menu = document.querySelector('.menu__nav');
+  const menuList = document.querySelector('.menu__nav ul');
+  const events = ['click'];
 
-    function dropMenu(){
-        menu.classList.add('ativo');
-        console.log('adicionou ativo')
-        // event.stopPropagation();
-        outsideClick(menuList,events, () => {
-            menu.classList.remove('ativo');
-            console.log('removeu ativo')
-        })
-    }
+  function dropMenu() {
+    menu.classList.add('ativo');
+    console.log('adicionou ativo');
+    // event.stopPropagation();
+    outsideClick(menuList, events, () => {
+      menu.classList.remove('ativo');
+      console.log('removeu ativo');
+    });
+  }
 
-
-    // console.log(menu)
-    // console.log(btn)
+  events.forEach((eventListener) => {
+    btn.addEventListener(eventListener, dropMenu);
+  });
 }

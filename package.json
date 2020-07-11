@@ -1,0 +1,24 @@
+{
+  "name": "laslevpn",
+  "version": "1.0.0",
+  "description": "projeto pessoal para treinar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whendev/laslevpn.git"
+  },
+  "author": "whendel morais",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whendev/laslevpn/issues"
+  },
+  "homepage": "https://github.com/whendev/laslevpn#readme",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
