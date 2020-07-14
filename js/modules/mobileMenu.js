@@ -12,7 +12,9 @@ export default function initMobileMenu() {
     console.log('adicionou ativo');
     // event.stopPropagation();
     outsideClick(menuList, events, () => {
+      // menu.classList.add('v');
       menu.classList.remove('ativo');
+
       console.log('removeu ativo');
     });
   }
