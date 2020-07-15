@@ -155,6 +155,16 @@ ul {
     }
 }
 
+@keyframes pisca {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
  /*       Mobile-First       *\ 
  \*                          */
 
@@ -267,6 +277,15 @@ ul {
     .feature__title,
     .feature__paragraph {
         text-align: center;
+    }
+
+    .feature__title::after {
+        content: '|';
+        margin-left: 5px;
+        animation: pisca .5s infinite;
+        color: #ccc;
+        opacity: 1;
+        font-weight: 400;
     }
 
     .feature__img {
