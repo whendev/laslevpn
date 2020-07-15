@@ -1,5 +1,5 @@
-import initMobileMenu from './modules/mobileMenu.js';
-import initScroll from './modules/scroll.js';
+import initMobileMenu from './modules/mobileMenu';
+import initScroll from './modules/scroll';
 
 initMobileMenu();
 initScroll();
