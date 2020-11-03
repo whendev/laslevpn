@@ -8,7 +8,7 @@ export default function initTextAnimate() {
     textArray.forEach((letra, i) => {
       setTimeout(() => {
         text.innerHTML += letra;
-      }, 70 * i);
+      }, 300 * i);
     });
   }
   function handleMutation(mutation) {
