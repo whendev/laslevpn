@@ -1,6 +1,6 @@
 # laslevpn
 
-> Olá, seja bem vindo ao meu gihub!
+> Olá, seja bem vindo ao meu github!
 > você está visualizando um projeto pessoal apenas para praticar meu front-end,
 > Fique a vontade <3
 
